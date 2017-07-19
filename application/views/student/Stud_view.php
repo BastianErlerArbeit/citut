@@ -28,12 +28,11 @@
                 echo "<td>Edit</td>";
                 echo "<td>Delete</td>";
             echo "<tr>";
-
             foreach($records as $r) {
                 echo "<tr>";
                     echo "<td>".$i++."</td>";
                     echo "<td>".$r->roll_no."</td>";
-                    echo "<td>".$r->name."</td>";
+                    echo "<td>".$r->Name."</td>";
                     echo "<td><a href = 'index.php/stud/edit/".$r->roll_no."'>Edit</a></td>";
                     echo "<td><a href = 'index.php/stud/delete/".$r->roll_no."'>Delete</a></td>";
                 echo "<tr>";

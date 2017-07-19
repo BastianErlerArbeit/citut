@@ -6,14 +6,16 @@
  * Time: 12:09
  */
 ?>
-<h2><?= $title; ?></h2>
+
+<h2><?php echo $title; ?></h2>
 
 <?php foreach ($news as $news_item): ?>
 
-    <h3><?= $news_item['title']; ?></h3>
+    <h3><?php echo $news_item['title']; ?></h3>
     <div class="main">
-        <?= $news_item['text']; ?>
+        <?php echo $news_item['text']; ?>
     </div>
-    <p><a href="<?= site_url('news/'.$news_item['slug']); ?>">View article</a></p>
+    <?= var_dump(site_url('news/'.$news_item['slug'])); ?>
+    <p><a href="<?php echo site_url('news/'.$news_item['slug']); ?>">View article</a></p>
 
 <?php endforeach; ?>
