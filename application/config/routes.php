@@ -49,8 +49,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-//session_tutorial
+
+//Internationalization_tutorial route
+$route['lang'] = "Language_Controller";
+
+/*
+//redirection_tutorial routes
+$route['redirect'] = 'Redirect_controller';
+$route['redirect/version2'] = 'Redirect_controller/version2';
+$route['redirect/computer_graphics'] = 'Redirect_controller/computer_graphics';
+
+//cache_tutorial routes
+$route['cachecontroller'] = 'Cache_controller';
+$route['cachecontroller/delete'] = 'Cache_controller/delete_file_cache';
+
+//cookie_tutorial routes
+$route['cookie'] = "Cookie_controller";
+$route['cookie/display'] = "Cookie_controller/display_cookie";
+$route['cookie/delete'] = "Cookie_controller/delete_cookie";
+
+//tempdata_tutorial routes
+$route['tempdata'] = "Tempdata_controller";
+$route['tempdata/add'] = "Tempdata_controller/add";
+
+
+//flashdata_tutorial routes
+$route['flashdata'] = 'FlashData_Controller';
+$route['flashdata/add'] = 'FlashData_Controller/add';
+
+//session_tutorial  routes
 $route['sessionex'] = 'Session_Controller';
+$route['sessionex/unset_session_data'] = 'Session_Controller/unset_session_data';
 
 // validation_tutorial route
 $route['validation'] = 'Form';
@@ -76,7 +105,7 @@ $route['upload'] = 'Upload';
 
 //default route
 $route['default_controller'] = 'news/view';
-/*
+*/
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;*/
+$route['translate_uri_dashes'] = FALSE;

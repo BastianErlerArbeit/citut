@@ -32,6 +32,6 @@
 
             //removing session data
             $this->session->unset_userdata('name');
-            $this->load->view('session_view');
+            $this->load->view('session_tutorial/session_view');
         }
     }

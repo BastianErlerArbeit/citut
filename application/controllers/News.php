@@ -12,6 +12,7 @@ class News extends CI_Controller
         parent::__construct();
         $this->load->model('news_model');
         $this->load->helper('url_helper');
+        $this->output->enable_profiler(TRUE);
     }
 
     public function index()

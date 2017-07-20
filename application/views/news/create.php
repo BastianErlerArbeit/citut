@@ -20,6 +20,3 @@
     <input type="submit" name="submit" value="Create news item" />
 
 </form>
-
-
-
